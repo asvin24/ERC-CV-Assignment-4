@@ -20,7 +20,7 @@ while True:
             mp_drawing.draw_landmarks(image,hand_landmarks,mphands.HAND_CONNECTIONS)
 
     cv2.imshow('handtracker',image)
-    if cv2.waitKey(1) and 0xFF==ord('q'):
+    if cv2.waitKey(1) & 0xFF==ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows()
